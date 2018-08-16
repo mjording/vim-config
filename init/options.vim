@@ -49,15 +49,16 @@ set autoread                    " No prompt for file changes outside Vim
 set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
-
 set hls                         " search with highlights by default
-
+if !has('gui_running')
+  set t_Co=256
+endif
 " Write all writeable buffers when changing buffers or losing focus.
 set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
 let g:sql_type_default="postgresql"
-
+set laststatus=2
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
 if has("gui_running")

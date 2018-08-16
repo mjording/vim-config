@@ -63,7 +63,6 @@ else
   Plugin 'tpope/vim-unimpaired'
   Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
-  Plugin 'scrooloose/syntastic'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
@@ -100,7 +99,7 @@ else
   Plugin 'epmatsw/ag.vim'
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
-  Plugin 'kien/ctrlp.vim'
+  " Plugin 'kien/ctrlp.vim'
 
   "
   " Navigation
@@ -134,7 +133,9 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
-
+  Plugin 'w0rp/ale'
+  Plugin 'itchyny/lightline.vim'
+  Plugin 'junegunn/fzf.vim'
   "
   " Development Tool Integration
   "
@@ -146,7 +147,9 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
-
+  Plugin 'vim-pandoc/vim-pandoc'
+  Plugin 'vim-pandoc/vim-pandoc-syntax'
+  Plugin 'Rykka/riv.vim'
   call vundle#end()
 
   filetype plugin indent on
